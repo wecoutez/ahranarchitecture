@@ -145,9 +145,26 @@ em { font-style: italic; }
   color: var(--bg);
 }
 .tab__num { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
-.tab__body { display: flex; flex-direction: column; gap: 2px; line-height: 1.2; }
-.tab__cat { font-family: var(--mono); font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.7; }
-.tab__title { font-family: var(--serif); font-size: 18px; font-weight: 900; letter-spacing: -0.01em; }
+.tab__body { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 6px; 
+  line-height: 1.2;
+}
+.tab__cat { 
+  font-family: var(--mono); 
+  font-size: 9px; 
+  letter-spacing: 0.14em; 
+  text-transform: uppercase; 
+  opacity: 0.7; 
+  min-height: 12px;
+}
+.tab__title { 
+  font-family: var(--serif); 
+  font-size: 18px; 
+  font-weight: 900; 
+  letter-spacing: -0.01em; 
+}
 .tab__title em { font-style: italic; font-weight: 900; }
 .tab__yr { display: none; }
 
@@ -161,10 +178,12 @@ em { font-style: italic; }
     padding: 18px var(--pad);
     border-bottom: 1px solid var(--ink);
     border-right: 1px solid var(--ink);
+    align-items: start;
   }
   .tab:nth-child(2n) { border-right: none; }
   .tab:nth-last-child(-n+2) { border-bottom: none; }
   .tab__title { font-size: 20px; }
+  .tab__cat { min-height: 14px; }
   .tab__yr { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
 }
 
@@ -176,9 +195,11 @@ em { font-style: italic; }
     border-bottom: none !important;
     border-right: 1px solid var(--ink) !important;
     padding: 22px var(--pad);
+    align-items: start;
   }
   .tab:last-child { border-right: none !important; }
-  .tab__title { font-size: 20px; }
+  .tab__title { font-size: 19px; line-height: 1.15; }
+  .tab__body { gap: 8px; }
 }
 
 /* ── Folio container ──────────────────────────────────────── */

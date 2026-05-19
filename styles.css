@@ -79,7 +79,11 @@ em { font-style: italic; }
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.14em;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s;
 }
+.mast__brand:hover { opacity: 0.7; }
 .mast__brand span { color: var(--ink-mute); font-weight: 400; }
 .mast__title {
   font-weight: 500;
@@ -166,7 +170,7 @@ em { font-style: italic; }
 
 @media (min-width: 1100px) {
   .tabs {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .tab {
     border-bottom: none !important;
@@ -174,7 +178,7 @@ em { font-style: italic; }
     padding: 22px var(--pad);
   }
   .tab:last-child { border-right: none !important; }
-  .tab__title { font-size: 22px; }
+  .tab__title { font-size: 20px; }
 }
 
 /* ── Folio container ──────────────────────────────────────── */

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f4f3ee">
+
+<title>About — Speculative Architecture</title>
+<meta name="description" content="About Ahran Won — a speculative architecture research practice based in Seoul, working internationally.">
+<meta name="author" content="Ahran Won">
+
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="About — Speculative Architecture">
+<meta property="og:description" content="A research practice working through drawings, films, and writing.">
+<meta property="og:image" content="og-image.jpg">
+
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* About page — minimal, single-column variations */
+.about-page {
+  min-height: calc(100vh - 200px);
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  padding: 60px var(--pad) 40px;
+  border-bottom: 1px solid var(--ink);
+}
+
+.about-hero .label {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 14px;
+}
+
+.about-hero .name {
+  font-family: var(--serif);
+  font-size: 64px;
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  margin-bottom: 14px;
+}
+.about-hero .name em { font-style: italic; font-weight: 900; }
+
+.about-hero .role {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 19px;
+  color: var(--ink-mute);
+  margin-bottom: 24px;
+}
+
+.about-hero .lede {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 600px;
+  border-left: 1px solid var(--ink);
+  padding-left: 14px;
+  font-style: italic;
+}
+
+.about-hero .lede em { color: var(--ink); font-style: italic; }
+
+@media (min-width: 720px) {
+  .about-hero {
+    grid-template-columns: 200px 1fr;
+    gap: var(--gap);
+    padding: 100px var(--pad) 60px;
+  }
+  .about-hero .label { margin-bottom: 0; }
+  .about-hero .name { font-size: clamp(72px, 9vw, 140px); }
+  .about-hero .role { font-size: 22px; }
+  .about-hero .lede { font-size: 17px; }
+}
+
+/* Data sheet — like hero in folio pages */
+.about-data {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 40px var(--pad);
+  border-bottom: 1px solid var(--ink);
+}
+
+.about-data .label {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 10px;
+}
+
+.about-data dl {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  border-top: 1px solid var(--ink);
+  font-size: 12px;
+  max-width: 500px;
+}
+.about-data dl > div { display: contents; }
+.about-data dt, .about-data dd {
+  padding: 9px 0;
+  border-bottom: 1px dotted var(--line);
+}
+.about-data dt {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  padding-right: 12px;
+}
+.about-data dd {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+}
+
+.about-data dd a {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px dotted var(--ink);
+  transition: color 0.2s;
+}
+.about-data dd a:hover {
+  color: var(--pink);
+  border-bottom-color: var(--pink);
+}
+
+@media (min-width: 720px) {
+  .about-data {
+    grid-template-columns: 200px 1fr;
+    gap: var(--gap);
+    padding: 60px var(--pad);
+  }
+  .about-data .label { margin-bottom: 0; }
+  .about-data dl { font-size: 13px; }
+  .about-data dd { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ MASTHEAD ═══════════ -->
+<header class="mast">
+  <div class="mast__brand">Speculative Architecture <span>/ Research</span></div>
+  <div class="mast__title">Folios — 2024 / 2026 —</div>
+  <nav class="mast__nav">
+    <a href="index.html">Folios</a>
+    <a href="about.html" style="font-weight:500;opacity:1;">About</a>
+  </nav>
+</header>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<main class="about-page">
+
+  <section class="about-hero">
+    <div class="label">/ About</div>
+    <div>
+      <h1 class="name">Ahran <em>Won.</em></h1>
+      <div class="role">Speculative architecture · research</div>
+      <p class="lede">A research practice working through drawings, films, and writing — investigating water, folded geometry, demilitarisation, and the city as a slow, irregular medium. <em>Working between Korea and abroad.</em></p>
+    </div>
+  </section>
+
+  <section class="about-data">
+    <div class="label">Correspondence</div>
+    <dl>
+      <div><dt>Email</dt><dd><a href="mailto:hello@ahran-won.com">hello@ahran-won.com</a> <span style="font-style:normal;color:var(--ink-mute);font-size:11px;font-family:var(--mono);letter-spacing:0.06em;">— placeholder</span></dd></div>
+      <div><dt>Practice</dt><dd>Between Korea and abroad</dd></div>
+      <div><dt>Discipline</dt><dd>Speculative architecture, research</dd></div>
+      <div><dt>For</dt><dd>Exhibitions, publications, research correspondence</dd></div>
+    </dl>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>Speculative Architecture</span>
+  <span>Folios — 2024 / 2026 —</span>
+  <span>© 2026 — page ∞ of ∞</span>
+</footer>
+
+</body>
+</html>

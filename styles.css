@@ -211,15 +211,13 @@ em { font-style: italic; }
   background: #1a1a1a;
   overflow: hidden;
   border-bottom: 1px solid var(--ink);
-  min-height: 240px;
+  /* aspect-ratio is set inline per-video to match native ratio */
 }
 .reel__video {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  max-height: 80vh;
-  min-height: 240px;
-  object-fit: contain;
+  object-fit: cover;
   background: #1a1a1a;
 }
 .reel__overlay {
@@ -238,9 +236,26 @@ em { font-style: italic; }
 .reel__overlay span:nth-child(2) { color: var(--ink-mute); }
 
 @media (min-width: 720px) {
-  .reel { min-height: 400px; }
-  .reel__video { min-height: 400px; }
   .reel__overlay { font-size: 10px; padding: 14px var(--pad); }
+}
+
+/* ── Hero subtitle (project nickname / original title) ───── */
+.hero .subtitle {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--ink-mute);
+  margin-top: 6px;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+@media (min-width: 720px) {
+  .hero .subtitle {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
 }
 
 /* ── Hero (title page) ────────────────────────────────────── */

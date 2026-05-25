@@ -148,24 +148,25 @@ em { font-style: italic; }
 .tab__body { 
   display: flex; 
   flex-direction: column; 
-  gap: 6px; 
+  gap: 5px; 
   line-height: 1.2;
 }
 .tab__cat { 
   font-family: var(--mono); 
-  font-size: 9px; 
-  letter-spacing: 0.14em; 
+  font-size: 10px; 
+  letter-spacing: 0.12em; 
   text-transform: uppercase; 
-  opacity: 0.7; 
+  opacity: 0.65; 
   min-height: 12px;
 }
 .tab__title { 
   font-family: var(--serif); 
-  font-size: 18px; 
-  font-weight: 900; 
-  letter-spacing: -0.01em; 
+  font-size: 17px; 
+  font-weight: 700; 
+  letter-spacing: -0.005em;
+  line-height: 1.15;
 }
-.tab__title em { font-style: italic; font-weight: 900; }
+.tab__title em { font-style: italic; font-weight: 700; }
 .tab__yr { display: none; }
 
 @media (min-width: 720px) {
@@ -182,9 +183,9 @@ em { font-style: italic; }
   }
   .tab:nth-child(2n) { border-right: none; }
   .tab:nth-last-child(-n+2) { border-bottom: none; }
-  .tab__title { font-size: 20px; }
-  .tab__cat { min-height: 14px; }
-  .tab__yr { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; }
+  .tab__title { font-size: 19px; }
+  .tab__cat { min-height: 13px; font-size: 10px; }
+  .tab__yr { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.6; }
 }
 
 @media (min-width: 1100px) {
@@ -198,8 +199,9 @@ em { font-style: italic; }
     align-items: start;
   }
   .tab:last-child { border-right: none !important; }
-  .tab__title { font-size: 17px; line-height: 1.15; }
-  .tab__body { gap: 8px; }
+  .tab__title { font-size: 16px; line-height: 1.2; letter-spacing: -0.005em; }
+  .tab__cat { font-size: 9px; letter-spacing: 0.1em; }
+  .tab__body { gap: 7px; }
 }
 
 /* ── Folio container ──────────────────────────────────────── */
